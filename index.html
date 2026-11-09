@@ -1,179 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vasudha Nair</title>
 <meta name="description" content="Vasudha Nair is a PhD candidate in Finance at the David Eccles School of Business, University of Utah. Research on mutual funds, ETFs, urban economics, and municipal finance.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#1c2130; --muted:#6b7280; --accent:#2b3a67; --rule:#e5e7eb; --bg:#ffffff; --soft:#f6f7f9;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Spectral",Georgia,"Times New Roman",serif;font-size:17.5px;line-height:1.6}
-  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(43,58,103,.25)}
-  a:hover{border-bottom-color:var(--accent)}
-  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-  header{padding:56px 0 28px;border-bottom:1px solid var(--rule)}
-  h1{font-weight:500;font-size:40px;letter-spacing:-.01em;margin:0 0 6px;line-height:1.1}
-  .role{font-size:18px;margin:0}
-  .affil{color:var(--muted);margin:2px 0 0;font-size:17px}
-  .links{margin-top:18px;font-family:"Inter",system-ui,-apple-system,sans-serif;font-size:14px;letter-spacing:.01em}
-  .links a{border:1px solid var(--rule);border-radius:999px;padding:6px 13px;margin:0 8px 8px 0;display:inline-block;color:var(--ink);background:var(--soft)}
-  .links a:hover{border-color:var(--accent);color:var(--accent)}
-  nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--rule);z-index:5}
-  nav .wrap{display:flex;gap:26px;padding-top:12px;padding-bottom:12px;font-family:"Inter",system-ui,sans-serif;font-size:13.5px;text-transform:uppercase;letter-spacing:.09em}
-  nav a{color:var(--muted);border:0}
-  nav a:hover{color:var(--accent)}
-  section{padding:40px 0 8px}
-  h2{font-family:"Inter",system-ui,sans-serif;font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
-  h3{font-weight:600;font-size:19px;margin:0 0 4px;line-height:1.35}
-  h3 a{border:0}
-  h3 a:hover{border-bottom:1px solid var(--accent)}
-  .paper{padding:18px 0 20px;border-top:1px solid var(--rule)}
-  .paper:first-of-type{border-top:0;padding-top:4px}
-  .with{margin:0;color:var(--ink)}
-  .status{display:inline-block;font-family:"Inter",system-ui,sans-serif;font-size:12.5px;letter-spacing:.04em;color:var(--accent);background:#eef1f8;border-radius:4px;padding:2px 8px;margin:8px 8px 0 0}
-  .meta{color:var(--muted);font-size:15px;margin:8px 0 0}
-  details{margin-top:10px}
-  summary{cursor:pointer;color:var(--muted);font-family:"Inter",system-ui,sans-serif;font-size:13.5px;list-style:none;display:inline-block}
-  summary::-webkit-details-marker{display:none}
-  summary::before{content:"+ ";color:var(--accent)}
-  details[open] summary::before{content:"\2212  "}
-  details p{margin:10px 0 0;color:#2f3645;font-size:16.5px}
-  .about p{margin:0 0 14px}
-  ul.plain{list-style:none;padding:0;margin:0}
-  ul.plain li{padding:6px 0}
-  .refs{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
-  .refs div{padding:4px 0}
-  .refs .name{font-weight:600}
-  .refs .inst{color:var(--muted);font-size:15px}
-  footer{margin-top:48px;padding:22px 0 40px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px;font-family:"Inter",system-ui,sans-serif}
-  @media (max-width:600px){
-    body{font-size:16.5px}
-    h1{font-size:33px}
-    header{padding-top:40px}
-    nav .wrap{gap:18px;overflow-x:auto}
-    .refs{grid-template-columns:1fr}
-  }
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-  <div class="wrap">
-    <h1>Vasudha Nair</h1>
-    <p class="role">PhD Candidate in Finance</p>
-    <p class="affil">David Eccles School of Business, University of Utah</p>
-    <div class="links">
-      <a href="cv/Vasudha_Nair_CV.pdf">Curriculum Vitae</a>
-      <a href="mailto:vasudha.nair@eccles.utah.edu">vasudha.nair@eccles.utah.edu</a>
-    </div>
-  </div>
-</header>
-
-<nav>
-  <div class="wrap">
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#references">References</a>
-    <a href="cv/Vasudha_Nair_CV.pdf">CV</a>
-  </div>
-</nav>
+<div class="bar"><div class="wrap"><a class="brand" href="index.html">Vasudha Nair</a><nav class="nav"><a href="index.html" class="on">Home</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="cv/Vasudha_Nair_CV.pdf">CV</a></nav></div></div>
+<div class="banner"><div class="wrap"><h1>Vasudha Nair</h1><p>PhD Candidate in Finance &middot; University of Utah</p></div></div>
 
 <main class="wrap">
+  <div class="home">
+    <img class="photo" src="img/vasudha_nair.jpg" alt="Vasudha Nair">
+    <div class="lede">
+      <p>I am a PhD candidate in Finance at the David Eccles School of Business, University of Utah, and I am on the 2026&ndash;27 academic job market.</p>
+      <p>My research studies mutual funds and ETFs: where fund-manager skill comes from, and how the migration of active management from mutual funds into ETFs changes investor behavior and manager incentives. I also work on urban economics and municipal finance.</p>
+      <p class="contact">Contact: <a href="mailto:vasudha.nair@eccles.utah.edu">vasudha.nair@eccles.utah.edu</a></p>
+      <div class="btns">
+        <a class="btn solid" href="cv/Vasudha_Nair_CV.pdf">Curriculum Vitae</a>
+        <a class="btn" href="research.html">Research</a>
+        <a class="btn" href="mailto:vasudha.nair@eccles.utah.edu">Email</a>
+      </div>
+    </div>
+  </div>
 
-  <section id="about" class="about">
-    <h2>About</h2>
-    <p>I am a PhD candidate in Finance at the David Eccles School of Business, University of Utah, and I am on the 2026&ndash;27 academic job market.</p>
-    <p>My research studies mutual funds and ETFs: where fund-manager skill comes from, and how the migration of active management from mutual funds into ETFs changes investor behavior and manager incentives. I also work on urban economics and municipal finance.</p>
-    <p class="meta">Research interests: Mutual Funds, ETFs, Urban Economics, Municipal Finance<br>
-    Education: B.S. in Finance, Miami University, 2021 &middot; PhD in Finance, University of Utah, expected 2027</p>
-  </section>
-
-  <section id="research">
-    <h2>Job Market Paper</h2>
-
-    <article class="paper">
-      <h3>Education and Investment Skill: Evidence from Mutual Fund Managers</h3>
-      <span class="status">Job Market Paper</span>
-      <p class="meta">Presented at the FMA Doctoral Student Consortium (October 2026)</p>
-      <details open>
-        <summary>Abstract</summary>
-        <p>Does the quality of a fund manager&rsquo;s education predict investment skill? Using syllabi from 669 managers&rsquo; colleges, I measure Relevance, fit with investment-management work, and Timeliness, how current coursework is. A one-standard-deviation increase in either predicts 0.5 percentage points higher annual net returns. Prestige controls and wrong-field placebos leave the relation unchanged. Because students tend to attend nearby colleges, I use education quality at the university nearest each manager&rsquo;s high school as an instrument. Both estimates are significant. The two measures capture distinct skills: Relevance predicts returns with high analyst coverage, and Timeliness when managers must develop their own analysis.</p>
-      </details>
-    </article>
-
-    <h2 style="margin-top:36px">Working Papers</h2>
-
-    <article class="paper">
-      <h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4757876">Determinants and Consequences of Return to Office Policies</a></h3>
-      <p class="with">with <a href="https://sites.google.com/site/seanjflynnjr/home">Sean Flynn</a> and <a href="http://www.andraghent.com/">Andra Ghent</a></p>
-      <span class="status">Revise &amp; Resubmit, Management Science</span>
-      <p class="meta">Presented at the AFA Annual Meeting (2026), Rocky Mountain Urban &amp; Real Estate Conference (2026), Bloomberg Center for Cities at Harvard (2025), AREUEA (2025, 2024), Eastern Finance Association (2025), Office of Financial Research (2024), UNC CREDA Symposium (2024), Stanford Remote Work Conference (2024), FMA (2024), Federal Reserve Board (2023), North American Urban Economics Association (2023), and university seminars</p>
-      <details>
-        <summary>Abstract</summary>
-        <p>We study firms&rsquo; return-to-office (RTO) policies by hand-collecting and classifying announcements for the Russell 3000. Among announcing firms, most allow some remote work, but few allow fully remote work. We develop a simple model of a firm&rsquo;s RTO policy in which a firm trades off productivity loss from work-from-home (WFH) against savings on employee wages and office rent. Relatively lower office rents in a city are associated with more in-person work. Further, firms with female CEOs allow more WFH and firms with older CEOs allow less WFH. Finally, we find no consistently significant stock market reaction to policy announcements; this is consistent with firms correctly balancing the tradeoffs related to WFH, the market having no better information than managers about the optimal policy, or uncertainty on the part of both managers and investors about the optimal policy.</p>
-      </details>
-    </article>
-
-    <article class="paper">
-      <h3>Active ETFs as Attention Assets: Retail Trading Meets Managed Funds</h3>
-      <p class="with">with <a href="https://dahuang-finance.github.io/">Da Huang</a> and <a href="https://merage.uci.edu/research-faculty/faculty-directory/Christopher-Schwarz.html">Christopher Schwarz</a></p>
-      <p class="meta">Presented at the Conference on Financial Market Regulation (2026), FMA Annual Meeting (2025), ICI Summer Research Workshop (2025), and Northeastern University (2025)</p>
-      <details>
-        <summary>Abstract</summary>
-        <p>In contrast to active mutual funds (AMFs), active exchange-traded funds (AETFs) are growing rapidly. Their popularity is due to their structure, not performance, as AETFs underperform AMFs. Specifically, attention-driven retail investors trade AETFs as they trade equities: by chasing extreme short-term returns, both positive and negative, which creates a U-shaped flow-performance relation. However, long-term underperformance triggers little outflow, incentivizing AETF managers to raise volatility. Indeed, these managers, who have little overlap with AMF managers, take significantly more risk. Overall, our results show how active management&rsquo;s migration from mutual funds to ETFs reshapes investor behavior and manager incentives.</p>
-      </details>
-    </article>
-
-    <h2 style="margin-top:36px">Work in Progress</h2>
-
-    <article class="paper">
-      <h3>Tax Revenue Risk, Municipal Bond Yield, and Public Investments</h3>
-      <p class="with">with <a href="https://dahuang-finance.github.io/">Da Huang</a> and <a href="https://www.nathanseegert.com/">Nathan Seegert</a></p>
-      <p class="meta">Presented at the National Tax Association Annual Conference (2026), FMA Annual Meeting (2026), Chicago Fed and University of Chicago Conference on Municipal Bond Markets (2026), International Institute of Public Finance Annual Congress (2026), Urban Economics Association North American Meeting (2025), and Northeastern University (2025)</p>
-      <details>
-        <summary>Abstract</summary>
-        <p>Tax revenue fluctuations can threaten municipalities&rsquo; fiscal stability, especially when shortfalls coincide with economic downturns. We study how exposure to tax revenue risk, the covariance between tax revenues and macroeconomic conditions, affects municipal borrowing costs and public investment. Municipalities with higher tax risk pay more to borrow: a one-standard-deviation increase in tax risk raises offering yields by 3 basis points and secondary-market yields by 7 basis points. These effects are robust to a border-discontinuity design and are strongest where alternative repayment capacity is limited. Greater tax risk, in turn, leads to sustained reductions in public investment.</p>
-      </details>
-    </article>
-
-    <article class="paper">
-      <h3>Belief Formation in Retail Trading: Evidence from Active ETFs</h3>
-      <p class="with">with <a href="https://dahuang-finance.github.io/">Da Huang</a></p>
-      <details>
-        <summary>Abstract</summary>
-        <p>We study belief formation in retail trading and its implications for investors and the market. Using active exchange-traded funds (ETFs) as the setting, we show that ETFs with daily holdings disclosure attract significant copycat trading, whereas those with delayed disclosure do not. These herding, copycat trades are primarily from retail investors, while institutional investors do not herd. The herding trades destabilize stock prices from fundamental values and increase volatility. This paper suggests maximal transparency and disclosure may not always be optimal.</p>
-      </details>
+  <section>
+    <h2>Job Market Paper</h2><div class="rule"></div>
+    <article class="card">
+      <h3><a href="research.html#jmp">Education and Investment Skill: Evidence from Mutual Fund Managers</a></h3>
+      <span class="tag jmp">Job Market Paper</span>
+      <p class="meta">Does the quality of a fund manager&rsquo;s education predict investment skill? Using syllabi from 669 managers&rsquo; colleges, I measure Relevance, fit with investment-management work, and Timeliness, how current coursework is. A one-standard-deviation increase in either predicts 0.5 percentage points higher annual net returns. <a href="research.html#jmp">Read the abstract</a></p>
     </article>
   </section>
 
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <article class="paper" style="border-top:0;padding-top:4px">
-      <h3>FINAN 4550: International Finance</h3>
-      <p class="with">University of Utah, Spring 2024 &middot; Sole instructor, undergraduate</p>
-      <p class="meta">Average instructor rating 5.27 / 6 &middot; <a href="teaching/FINAN4550_course_evaluations.pdf">Course evaluations</a></p>
-    </article>
-  </section>
-
-  <section id="awards">
-    <h2>Awards and Service</h2>
-    <ul class="plain">
-      <li>Marriner S. Eccles Political Economy Fellowship, 2026</li>
-      <li>Discussant, FMA Annual Meeting, 2024, 2025, 2026</li>
-      <li>Student Representative, Eccles School PhD Committee, 2025, 2026</li>
-    </ul>
-  </section>
-
-  <section id="references">
-    <h2>References</h2>
+  <section>
+    <h2>References</h2><div class="rule"></div>
     <div class="refs">
       <div><div class="name">Jeffrey L. Coles (Chair)</div><div class="inst">University of Utah</div></div>
       <div><div class="name">Davidson Heath</div><div class="inst">University of Utah</div></div>
@@ -183,12 +44,7 @@
     </div>
     <p class="meta">Contact details are in the <a href="cv/Vasudha_Nair_CV.pdf">CV</a>.</p>
   </section>
-
 </main>
-
-<footer>
-  <div class="wrap">Vasudha Nair &middot; Last updated November 2026</div>
-</footer>
-
+<footer><div class="wrap"><span>Vasudha Nair &middot; David Eccles School of Business, University of Utah</span><span>Last updated November 2026</span></div></footer>
 </body>
 </html>
